@@ -6,8 +6,8 @@ const STORE = {
   name: "Clotch",
   // WhatsApp number with country code, digits only (no +, spaces or dashes).
   // PLACEHOLDER: replace with the real number. e.g. India 98765 43210 -> "919876543210"
-  whatsappNumber: "919999999999",
-  instagramUrl: "https://instagram.com/clotch",   // PLACEHOLDER
+  whatsappNumber: "919895015752",
+  instagramUrl: "https://www.instagram.com/_clotch__?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw==",   // PLACEHOLDER
   currency: "₹",
   // Message used for the product button. {name} and {price} are replaced automatically.
   productMessage: "Hi Clotch! I'm interested in the {name} ({price}). Is it available?",
