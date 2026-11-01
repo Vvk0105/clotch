@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Clotch | Women's Kurta Sets & Ethnic Wear</title>
-  <meta name="description" content="Clotch – beautiful printed kurta sets for women. Browse the collection and order instantly on WhatsApp.">
-  <meta property="og:title" content="Clotch | Women's Kurta Sets">
-  <meta property="og:description" content="Beautiful printed kurta sets. Browse and order instantly on WhatsApp.">
+  <title>Clotch | Women's Clothing</title>
+  <meta name="description" content="Clotch – women's kurta sets, kurthis, party wear and tops. Browse the collection and order instantly on WhatsApp.">
+  <meta property="og:title" content="Clotch | Women's Clothing">
+  <meta property="og:description" content="Women's kurta sets, kurthis, party wear and tops. Browse and order instantly on WhatsApp.">
   <meta property="og:image" content="assets/images/products/product-04.jpg">
   <meta name="theme-color" content="#111111">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
@@ -24,6 +24,7 @@
         <span class="brand__name">CLOTCH</span>
       </a>
       <nav class="nav" id="nav" aria-label="Main">
+        <a href="#categories">Categories</a>
         <a href="#collection">Collection</a>
         <a href="#about">About</a>
         <a href="#how">How to order</a>
@@ -58,20 +59,33 @@
     <section class="strip">
       <div class="container strip__inner">
         <span>Premium cotton</span>
-        <span>Kurta + pant + dupatta sets</span>
+        <span>Kurta sets, kurthis &amp; more</span>
         <span>Order via WhatsApp</span>
         <span>Easy size help</span>
       </div>
     </section>
 
+    <!-- CATEGORIES -->
+    <section class="section section--tight" id="categories">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Browse</p>
+          <h2>Shop by category</h2>
+        </div>
+        <div class="cats" id="cats"></div>
+      </div>
+    </section>
+
     <!-- COLLECTION -->
-    <section class="section" id="collection">
+    <section class="section section--tight" id="collection">
       <div class="container">
         <div class="section__head">
           <p class="eyebrow">The collection</p>
-          <h2>Kurta sets</h2>
+          <h2 id="collectionTitle">All styles</h2>
           <p class="section__sub">Tap a piece to see details, then message us to check availability.</p>
         </div>
+        <div class="filters" id="filters" role="tablist" aria-label="Filter by category"></div>
+        <p class="empty" id="empty" hidden>Nothing here yet. Check back soon.</p>
         <div class="grid" id="grid"></div>
       </div>
     </section>
@@ -84,7 +98,7 @@
           <h2>Everyday elegance,<br>effortlessly yours.</h2>
         </div>
         <div>
-          <p>Clotch is a clothing label built around simple, wearable pieces. We're starting with women's kurta sets: breathable fabrics, hand-picked prints and fits that work from the office to the festival.</p>
+          <p>Clotch is a clothing label built around simple, wearable pieces. We're starting with women's wear, from kurta sets and kurthis to party wear and everyday tops, with hand-picked styles that work from the office to the festival.</p>
           <p>We're a small team, so every order is personal. Message us, ask anything, and we'll help you find your size and colour.</p>
         </div>
       </div>
@@ -122,6 +136,7 @@
       </div>
       <div>
         <h4>Explore</h4>
+        <a href="#categories">Categories</a>
         <a href="#collection">Collection</a>
         <a href="#about">About</a>
         <a href="#how">How to order</a>
@@ -140,7 +155,10 @@
     <div class="modal__backdrop" data-close></div>
     <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="mTitle">
       <button class="modal__close" data-close aria-label="Close">&times;</button>
-      <div class="modal__media"><img id="mImg" src="" alt=""></div>
+      <div class="modal__media">
+        <img id="mImg" src="" alt="">
+        <div class="thumbs" id="mThumbs"></div>
+      </div>
       <div class="modal__body">
         <p class="eyebrow" id="mCat"></p>
         <h3 id="mTitle"></h3>
